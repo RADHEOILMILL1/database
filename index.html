@@ -1,84 +1,90 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>RADHE OIL MILL</title><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Gujarati:wght@400;600&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
 <style>
-form {
-  border-radius: 60px;
-  background-color: #f2f2f2;
-
-
- 
-
-
-  padding: 40px;
-}
-
-label {display: block;}
-
-input[type=text], select {
-  width: 100%;
-  padding: 12px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 20px;
-  box-sizing: border-box;
-}
-
-input[type=submit] {
-  width: 100%;
-  background-color: #4CAF50;
-  color: white;
-  padding: 14px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 20px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-</style>
-<body>
-
-<h2>REGISTOR FORM...</h2>
-
-<div>
-<form method="POST" name="google-sheet">
-  <label for="name">Name</label>
-  <input type="text" id="fname" name="Name" placeholder="Your name..">
-
-  <label for="email">Email</label>
-  <input type="text" id="lname" name="Email" placeholder="Your email..">
-
-
- <label for="password">Password</label>
-  <input type="text" id="lname" name="Password" placeholder="Your password..">
-
-  <label for="mobile">Mobile</label>
-  <input type="text" id="lname" name="Mobile" placeholder="Your mobile number..">
-
-
-  
-  <input type="submit" value="Submit" name="submit">
-</form>
-</div>
-
+:root{--bg:#0b0b0c;--sf:#161618;--sf2:#202023;--tx:#f3efe4;--mu:#9a9486;--g:#d4af37;--g2:#f5d77a;--bd:#2c2a24;--rd:#e5534b;--gr:#3fb950;color-scheme:dark;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+*{box-sizing:border-box}html,body{height:auto;margin:0}body{background:var(--bg);color:var(--tx);font:15px/1.5 "Noto Sans Gujarati",system-ui,sans-serif}
+h1,h2,.br b{font-family:"Playfair Display",serif;color:var(--g)}h3{color:var(--g2);margin:.2em 0 .6em}
+#app{display:flex;min-height:100vh}.sb{width:220px;background:var(--sf);border-right:1px solid var(--bd);padding:16px 10px;position:fixed;inset:0 auto 0 0;z-index:20;transition:transform .3s;overflow:auto}
+.br{text-align:center;margin-bottom:14px}.br b{display:block;font-size:18px}.br small{color:var(--mu)}.br img{height:48px;border-radius:8px}
+.sb a{display:block;padding:10px 12px;margin:3px 0;border-radius:10px;cursor:pointer;color:var(--mu);transition:.2s}.sb a:hover{background:var(--sf2);color:var(--tx)}.sb a.on{background:linear-gradient(135deg,var(--g),#8a6d1a);color:#111;font-weight:600}
+.mn{flex:1;margin-left:220px;min-width:0}header{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:12px 18px;background:var(--sf);border-bottom:1px solid var(--bd);position:sticky;top:env(safe-area-inset-top,0px);z-index:10}header span:first-of-type{color:var(--g2);font-weight:600;font-size:18px}.hb{display:none}
+main{padding:18px}.fi{animation:fi .4s ease}@keyframes fi{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:12px;margin-bottom:16px}
+.card{background:var(--sf);border:1px solid var(--bd);border-radius:14px;padding:16px;margin-bottom:14px;transition:.25s}.grid .card{margin:0}.grid .card:hover{border-color:var(--g);transform:translateY(-3px);box-shadow:0 6px 20px #d4af3722}
+.card small{color:var(--mu)}.card b{display:block;font-size:20px;color:var(--g2)}
+button{font:inherit;cursor:pointer;border:0;border-radius:9px;padding:8px 14px;transition:.2s}.b1{background:linear-gradient(135deg,var(--g2),var(--g));color:#111;font-weight:600}.b1:hover{filter:brightness(1.1);transform:translateY(-1px)}.b2{background:var(--sf2);color:var(--tx);border:1px solid var(--bd)}.sm{padding:4px 8px;margin:1px;background:var(--sf2);color:var(--tx);border:1px solid var(--bd)}.sm:hover{border-color:var(--g)}.on{background:var(--g)!important;color:#111!important}
+input,select,textarea{width:100%;background:var(--bg);color:var(--tx);border:1px solid var(--bd);border-radius:9px;padding:9px;font:inherit;margin:3px 0 8px}input:focus,select:focus{outline:0;border-color:var(--g)}label{display:block;color:var(--mu);font-size:13px}
+.sc{overflow-x:auto;margin:8px 0}table{width:100%;border-collapse:collapse}th,td{padding:9px 10px;text-align:left;border-bottom:1px solid var(--bd);white-space:nowrap}th{color:var(--g);cursor:pointer;font-size:13px}tr:hover td{background:#ffffff08}.ac{text-align:right}.th{height:36px;border-radius:6px}.mu{color:var(--mu)}
+.bad{color:var(--rd);font-weight:600}.ok{color:var(--gr)}.al{background:#e5534b22;border:1px solid var(--rd);padding:10px;border-radius:10px;margin-bottom:12px}
+.mb{position:fixed;inset:0;background:#000b;display:flex;align-items:center;justify-content:center;z-index:50;padding:12px;animation:fi .2s}.mc{background:var(--sf);border:1px solid var(--g);border-radius:16px;padding:18px;width:100%;max-width:520px;max-height:90vh;overflow:auto}
+.bt{display:flex;gap:8px;justify-content:flex-end;flex-wrap:wrap;margin-top:10px}.lr{display:grid;grid-template-columns:1fr 80px 36px;gap:6px}.lr button{margin:3px 0 8px}
+.lg{margin:auto;width:100%;max-width:380px;padding:20px;text-align:center}.lg .card{text-align:left}.lg h1{text-align:center;margin:0}.lg p{text-align:center;color:var(--mu)}
+#ts{position:fixed;bottom:20px;left:50%;transform:translate(-50%,80px);background:var(--g);color:#111;padding:10px 18px;border-radius:20px;transition:.3s;z-index:99;font-weight:600}#ts.sh{transform:translate(-50%,0)}
+.inv{background:#fff;color:#000;padding:14px;border-radius:8px}.inv h2{color:#000;margin:4px 0}.inv th,.inv td{color:#000;border-color:#ccc;font-size:13px}.inv .r{text-align:right}
+@media(max-width:800px){.sb{transform:translateX(-100%)}.sb.open{transform:none}.mn{margin-left:0}.hb{display:inline-block}main{padding:12px}}
+@media print{body *{visibility:hidden}.printable,.printable *{visibility:visible}.printable{position:absolute;left:0;top:0;width:100%;background:#fff!important}.printable *{color:#000!important;background:transparent!important}}
+</style></head><body><div id="app"></div><div id="md"></div><div id="ts"></div>
 <script>
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbzLmcjW7xMGUWzVKTmTDEg2u4KmEAwme3PSkcv4o7VqrZ5qugcpjfkpPe9PEwFXWUwE/exec'
-            const form = document.forms['google-sheet']
-          
-            form.addEventListener('submit', e => {
-              e.preventDefault()
-              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
-                .catch(error => console.error('Error!', error.message))
-            })
-          </script>
-
-
-</body>
-</html>
-
-
+const $=s=>document.querySelector(s),uid=()=>Date.now().toString(36)+Math.random().toString(36).slice(2,5),h=p=>btoa(unescape(encodeURIComponent(p))),R=x=>Math.round(x*100)/100;
+const esc=s=>String(s??'').replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c])),M=n=>'₹'+(+n||0).toLocaleString('en-IN',{maximumFractionDigits:2});
+const td=()=>new Date(Date.now()-new Date().getTimezoneOffset()*6e4).toISOString().slice(0,10);
+const L={dash:['Dashboard','ડેશબોર્ડ'],prod:['Products','ઉત્પાદનો'],bill:['Billing','બિલિંગ'],cust:['Customers','ગ્રાહકો'],exp:['Expenses','ખર્ચ'],inv:['Inventory','સ્ટોક'],emp:['Employees','કર્મચારી'],rep:['Reports','રિપોર્ટ'],set:['Settings','સેટિંગ્સ'],
+tsales:['Total Sales','કુલ વેચાણ'],today:['Today’s Sales','આજનું વેચાણ'],month:['Monthly Sales','માસિક વેચાણ'],tcust:['Total Customers','કુલ ગ્રાહકો'],tord:['Total Orders','કુલ ઓર્ડર'],texp:['Total Expenses','કુલ ખર્ચ'],profit:['Net Profit','ચોખ્ખો નફો'],pend:['Pending Payments','બાકી ચૂકવણી'],last7:['Sales – last 7 days','છેલ્લા 7 દિવસનું વેચાણ'],low:['Low Stock','ઓછો સ્ટોક'],
+add:['Add','ઉમેરો'],edit:['Edit','સુધારો'],del:['Delete','કાઢી નાખો'],save:['Save','સાચવો'],cancel:['Cancel','રદ કરો'],search:['Search…','શોધો…'],none:['No records','કોઈ રેકોર્ડ નથી'],conf:['Delete this record?','શું આ રેકોર્ડ કાઢી નાખવો?'],restmsg:['Replace ALL current data?','બધો ડેટા બદલવો છે?'],ok:['OK','બરાબર'],saved:['Saved','સાચવ્યું'],req:['Fill required fields','જરૂરી માહિતી ભરો'],
+name:['Name','નામ'],size:['Size','માપ'],price:['Price','કિંમત'],stock:['Stock','સ્ટોક'],minst:['Min stock alert','લઘુત્તમ સ્ટોક'],image:['Image','ફોટો'],mobile:['Mobile','મોબાઇલ'],addr:['Address','સરનામું'],date:['Date','તારીખ'],cat:['Category','શ્રેણી'],amt:['Amount','રકમ'],note:['Note','નોંધ'],role:['Role','ભૂમિકા'],salary:['Salary','પગાર'],user:['Username','યુઝરનેમ'],pass:['Password','પાસવર્ડ'],
+no:['Bill No','બિલ નં'],total:['Total','કુલ'],paid:['Paid','ચૂકવેલ'],unpaid:['Unpaid','બાકી'],partial:['Partial','આંશિક'],status:['Status','સ્થિતિ'],newbill:['New Bill','નવું બિલ'],disc:['Discount','છૂટ'],gst:['GST Invoice','GST બિલ'],nogst:['Non-GST','નોન-GST'],qty:['Qty','જથ્થો'],walkin:['Walk-in customer','રોકડ ગ્રાહક'],print:['Print','પ્રિન્ટ'],wa:['WhatsApp','વોટ્સએપ'],close:['Close','બંધ કરો'],
+purch:['Purchases','ખરીદી'],bal:['Balance','બાકી રકમ'],ledger:['Ledger','ખાતાવહી'],recv:['Receive Payment','ચુકવણી મેળવો'],in:['Stock In','સ્ટોક આવક'],out:['Stock Out','સ્ટોક જાવક'],prodn:['Production','ઉત્પાદન'],purc:['Oil Purchase','તેલ ખરીદી'],type:['Type','પ્રકાર'],move:['Stock Movements','સ્ટોક હિલચાલ'],
+att:['Attendance','હાજરી'],pdays:['Present days','હાજર દિવસ'],pays:['Pay','ચૂકવો'],daily:['Daily Sales','દૈનિક વેચાણ'],weekly:['Weekly Sales','સાપ્તાહિક વેચાણ'],monthly:['Monthly Sales','માસિક વેચાણ'],pl:['Profit & Loss','નફો-નુકસાન'],cust_r:['Customer Report','ગ્રાહક અહેવાલ'],stock_r:['Stock Report','સ્ટોક અહેવાલ'],exp_r:['Expense Report','ખર્ચ અહેવાલ'],export:['Export Excel/CSV','Excel/CSV એક્સપોર્ટ'],pdf:['Print / PDF','પ્રિન્ટ / PDF'],dl:['Download','ડાઉનલોડ'],
+bname:['Business Name','વ્યવસાયનું નામ'],gname:['Gujarati Name','ગુજરાતી નામ'],loc:['Location','સ્થળ'],phone:['Phone','ફોન'],gstin:['GSTIN','GSTIN'],gstr:['GST %','GST %'],foot:['Invoice footer','ઇન્વોઇસ ફૂટર'],logo:['Logo','લોગો'],backup:['Backup','બેકઅપ'],restore:['Restore (file)','રીસ્ટોર (ફાઇલ)'],cpass:['Change Password','પાસવર્ડ બદલો'],oldp:['Old password','જૂનો પાસવર્ડ'],newp:['New password (min 4)','નવો પાસવર્ડ (ઓછામાં ઓછા 4)'],login:['Login','લોગિન'],logout:['Logout','લોગઆઉટ'],wrong:['Invalid details','ખોટી વિગત'],tcnt:['Month','મહિનો'],
+Electricity:['Electricity','વીજળી'],Salary:['Salary','પગાર'],Transport:['Transport','પરિવહન'],Seeds:['Raw Material','કાચો માલ'],Repair:['Repair','રિપેર'],Rent:['Rent','ભાડું'],Other:['Other','અન્ય']};
+let DB,lang='en',me=null,pg='dash',TB={},AD=td(),EM=td().slice(0,7),RT='daily',RD=td(),BI,cb;
+const t=k=>(L[k]||[k,k])[lang=='gu'?1:0];
+function load(){try{DB=JSON.parse(localStorage.getItem('rom_db'))}catch(e){}DB=Object.assign({products:[],customers:[],bills:[],expenses:[],stock:[],emps:[],att:{},pay:[],set:{}},DB||{});
+DB.set=Object.assign({name:'RADHE OIL MILL',gu:'રાધે ઓઈલ મિલ',loc:'દેવલી',phone:'',addr:'',gstin:'',gst:5,foot:'Thank you! Visit again.',logo:'',lang:'en',admin:{u:'admin',p:h('admin123')}},DB.set)}
+function save(){try{localStorage.setItem('rom_db',JSON.stringify(DB))}catch(e){toast('Storage full')}}
+function toast(m){const e=$('#ts');e.textContent=m;e.classList.add('sh');setTimeout(()=>e.classList.remove('sh'),2300)}
+const modal=x=>$('#md').innerHTML=`<div class="mb" onclick="if(event.target==this)cl()"><div class="mc">${x}</div></div>`,cl=()=>$('#md').innerHTML='';
+function ask(fn,msg){cb=fn;modal(`<h3>${msg||t('conf')}</h3><div class="bt"><button class="b2" onclick="cl()">${t('cancel')}</button><button class="b1" onclick="cl();cb()">${t('ok')}</button></div>`)}
+const bal=c=>DB.bills.filter(b=>b.cid==c).reduce((s,b)=>s+b.total-b.paid,0)-DB.pay.filter(p=>p.cid==c).reduce((s,p)=>s+p.amt,0);
+const sm=a=>a.reduce((s,x)=>s+x.total,0),opt=o=>Array.isArray(o)?o:[o,o];
+/* tables */
+function tbl(id,cols,rows,acts){TB[id]={cols,rows,acts,q:'',s:null,d:1};return `<input placeholder="${t('search')}" oninput="TB['${id}'].q=this.value.toLowerCase();tb('${id}')"><div class="sc"><table><thead><tr>${cols.map((c,i)=>`<th onclick="srt('${id}',${i})">${t(c.l||c.k)} ↕</th>`).join('')}${acts?'<th></th>':''}</tr></thead><tbody id="tb_${id}"></tbody></table></div>`}
+function tb(id){const T=TB[id];let r=T.rows.filter(x=>!T.q||JSON.stringify(Object.values(x).filter(v=>typeof v!='string'||v.length<200)).toLowerCase().includes(T.q));
+if(T.s!=null){const k=T.cols[T.s].k;r=[...r].sort((a,b)=>(a[k]>b[k]?1:a[k]<b[k]?-1:0)*T.d)}
+$('#tb_'+id).innerHTML=r.map(x=>`<tr>${T.cols.map(c=>`<td>${c.f?c.f(x):esc(x[c.k])}</td>`).join('')}${T.acts?`<td class="ac">${T.acts(x)}</td>`:''}</tr>`).join('')||`<tr><td colspan="9" class="mu">${t('none')}</td></tr>`}
+function srt(id,i){const T=TB[id];T.d=T.s==i?-T.d:1;T.s=i;tb(id)}
+const AC=c=>x=>`<button class="sm" onclick="E('${c}','${x.id}')">✎</button><button class="sm" onclick="DL('${c}','${x.id}')">🗑</button>`;
+/* forms */
+const CATS=['Electricity','Salary','Transport','Seeds','Repair','Rent','Other'];
+const S={products:{l:'prod',r:['name','price'],f:[{k:'name'},{k:'size',t:'select',o:['1L','5L','15L']},{k:'price',t:'number'},{k:'stock',t:'number',v:0},{k:'min',l:'minst',t:'number',v:10},{k:'img',l:'image',t:'file'}]},
+customers:{l:'cust',r:['name'],f:[{k:'name'},{k:'mobile'},{k:'addr'}]},
+expenses:{l:'exp',r:['date','amt'],f:[{k:'date',t:'date',v:td()},{k:'cat',t:'select',o:CATS.map(c=>[c,t(c)])},{k:'amt',t:'number'},{k:'note'}]},
+emps:{l:'emp',r:['name'],f:[{k:'name'},{k:'mobile'},{k:'role'},{k:'salary',t:'number'},{k:'user'},{k:'pass',t:'password'}]}};
+function fld(f,v){const val=v?.[f.k]??f.v??'',l=`<label>${t(f.l||f.k)}`;
+if(f.t=='select')return l+`<select id="f_${f.k}">${f.o.map(opt).map(o=>`<option value="${esc(o[0])}" ${o[0]==val?'selected':''}>${esc(o[1])}</option>`).join('')}</select></label>`;
+if(f.t=='file')return l+`<input type="file" accept="image/*" onchange="img(this,'${f.k}')"><input type="hidden" id="h_${f.k}" value="${esc(val)}"></label>`;
+return l+`<input id="f_${f.k}" type="${f.t||'text'}" ${f.t=='password'?'':`value="${esc(val)}"`} ${f.t=='number'?'step="any" min="0"':''}></label>`}
+function img(el,k){const f=el.files[0];if(!f)return;const r=new FileReader();r.onload=()=>{const i=new Image();i.onload=()=>{const s=Math.min(1,300/Math.max(i.width,i.height)),c=document.createElement('canvas');c.width=i.width*s;c.height=i.height*s;c.getContext('2d').drawImage(i,0,0,c.width,c.height);$('#h_'+k).value=c.toDataURL('image/jpeg',.8)};i.src=r.result};r.readAsDataURL(f)}
+function E(c,id){const s=S[c],v=id?DB[c].find(x=>x.id==id):null;modal(`<h3>${t(id?'edit':'add')} · ${t(s.l)}</h3>${s.f.map(f=>fld(f,v)).join('')}<div class="bt"><button class="b2" onclick="cl()">${t('cancel')}</button><button class="b1" onclick="sv('${c}','${id||''}')">${t('save')}</button></div>`)}
+function sv(c,id){const o={},old=id?DB[c].find(x=>x.id==id):null;for(const f of S[c].f){let x=$('#'+(f.t=='file'?'h_':'f_')+f.k).value;if(f.t=='number')x=+x||0;else x=x.trim();if(f.k=='pass')x=x?h(x):(old?.pass||'');o[f.k]=x}
+if(S[c].r.some(k=>!o[k]))return toast(t('req'));if(c=='emps'&&o.user&&(o.user==DB.set.admin.u||DB.emps.some(e=>e.user==o.user&&e.id!=id)))return toast(t('wrong'));
+if(old)Object.assign(old,o);else DB[c].push({id:uid(),...o});save();cl();go();toast(t('saved'))}
+function DL(c,id){ask(()=>{if(c=='bills'){DB.bills.find(x=>x.id==id).items.forEach(i=>{const p=DB.products.find(x=>x.id==i.p);if(p)p.stock+=i.q})}
+if(c=='stock'){const m=DB.stock.find(x=>x.id==id),p=DB.products.find(x=>x.id==m.p);if(p)p.stock+=m.ty=='out'?m.q:-m.q}
+DB[c]=DB[c].filter(x=>x.id!=id);save();go()})}
+/* views */
+const V={};
+V.dash=()=>{const b=DB.bills,d=td(),ts=sm(b),ex=DB.expenses.reduce((s,x)=>s+x.amt,0),pd=DB.bills.reduce((s,x)=>s+x.total-x.paid,0)-DB.pay.reduce((s,x)=>s+x.amt,0);
+const c=[['tsales',M(ts)],['today',M(sm(b.filter(x=>x.date==d)))],['month',M(sm(b.filter(x=>x.date.startsWith(d.slice(0,7)))))],['tcust',DB.customers.length],['tord',b.length],['texp',M(ex)],['profit',M(ts-ex)],['pend',M(pd)]];
+const ds=[...Array(7)].map((_,i)=>{const x=new Date(Date.now()-(6-i)*864e5-new Date().getTimezoneOffset()*6e4).toISOString().slice(0,10);return[x.slice(5),sm(b.filter(y=>y.date==x))]}),mx=Math.max(1,...ds.map(x=>x[1])),lw=DB.products.filter(p=>p.stock<=p.min);
+return `<div class="grid">${c.map(x=>`<div class="card"><small>${t(x[0])}</small><b>${x[1]}</b></div>`).join('')}</div><div class="card"><h3>${t('last7')}</h3><svg viewBox="0 0 350 140" width="100%">${ds.map((x,i)=>{const hh=x[1]/mx*95;return `<rect x="${i*49+8}" y="${108-hh}" width="32" height="${hh}" rx="5" fill="#d4af37"><title>${M(x[1])}</title></rect><text x="${i*49+24}" y="125" fill="#9a9486" font-size="10" text-anchor="middle">${x[0]}</text><text x="${i*49+24}" y="${103-hh}" fill="#f5d77a" font-size="9" text-anchor="middle">${x[1]?Math.round(x[1]):''}</text>`}).join('')}</svg></div>
+${lw.length?`<div class="al">⚠ ${t('low')}: ${lw.map(p=>esc(p.name+' '+p.size)+' ('+p.stock+')').join(', ')}</div>`:''}`};
+V.prod=()=>{const a=me.role=='admin',lw=DB.products.filter(p=>p.stock<=p.min);return (lw.length?`<div class="al">⚠ ${t('low')}: ${lw.map(p=>esc(p.name+' '+p.size)).join(', ')}</div>`:'')+(a?`<button class="b1" onclick="E('products')">+ ${t('add')}</button>`:'')+tbl('p',[{k:'img',l:'image',f:x=>x.img?`<img class="th" src="${x.img}">`:'—'},{k:'name'},{k:'size'},{k:'price',f:x=>M(x.price)},{k:'stock',f:x=>`<span class="${x.stock<=x.min?'bad':'ok'}">${x.stock}</span>`}],DB.products,a&&AC('products'))};
+V.cust=()=>`<button class="b1" onclick="E('customers')">+ ${t('add')}</button>`+tbl('c',[{k:'name'},{k:'mobile'},{k:'tot',l:'purch',f:x=>M(x.tot)},{k:'bal',f:x=>`<span class="${x.bal>0?'bad':'ok'}">${M(x.bal)}</span>`}],DB.customers.map(c=>({...c,tot:sm(DB.bills.filter(b=>b.cid==c.id)),bal:bal(c.id)})),x=>`<button class="sm" onclick="LD('${x.id}')">${t('ledger')}</button>`+(me.role=='admin'?AC('customers')(x):''));
+function LD(id){const c=DB.customers.find(x=>x.id==id);let e=[...DB.bills.filter(b=>b.cid==id).map(b=>({d:b.date,n:'ROM-'+b.no,dr:b.total,cr:b.paid})),...DB.pay.filter(p=>p.cid==id).map(p=>({d:p.date,n:t('recv'),dr:0,cr:p.amt}))].sort((a,b)=>a.d>b.d?1:-1),r=0;
+modal(`<h3>${t('ledger')} · ${esc(c.name)} ${esc(c.mobile)}</h3><div class="sc"><table><tr><th>${t('date')}</th><th></th><th>Dr</th><th>Cr</th><th>${t('bal')}</th></tr>${e.map(x=>`<tr><td>${x.d}</td><td>${x.n}</td><td>${M(x.dr)}</td><td>${M(x.cr)}</td><td>${M(r+=x.dr-x.cr)}</td></tr>`).join('')}</table></div><b class="${r>0?'bad':'ok'}">${t('bal')}: ${M(r)}</b><label>${t('recv')}<input id="pa" type="number" min="0"></label><div class="bt"><button class="b2" onclick="cl()">${t('close')}</button><button class="b1" onclick="RC('${id}')">${t('recv')}</button></div>`)}
+function RC(id){const a=+$('#pa').value;if(a<=0)return toast(t('req'));DB.pay.push({id:uid(),cid:id,amt:a,date:td()});save();LD(id);go()}
+V.bill=()=>`<button class="b1" onclick="NB()">+ ${t('newbill')}</button>`+tbl('b',[{k:'no',f:x=>'ROM-'+x.no},{k:'date'},{k:'name'},{k:'total',f:x=>M(x.total)},{k:'paid',f:x=>M(x.paid)},{k:'st',l:'status',f:x=>`<span class="${x.st=='paid'?'ok':'bad'}">${t(x.st)}</span>`}],[...DB.bills].reverse().map(b=>({...b,st:b.paid>=b.total?'paid':b.paid>0?'partial':'unpaid'})),x=>`<button class="sm" onclick="INV('${x.id}')">🖨</button><button class="sm" onclick="WA('${x.id}')">WA</button>${me.role=='admin'?`<button class="sm" onclick="DL('bills','${x.id}')">🗑</button>`:''}`);
+function lineRow(){return `<div class="lr"><select class="lp" onchange="calc()">${DB.products.filter(p=>p.stock>0).map(p=>`<option value="${p.id}">${esc(p.name+' '+p.size)} – ${M(p.price)} (${p.stock})</option>`).join('')}</select><input class="lq" type="number" min="1" value="1" oninput="calc()"><button class="b2" onclick="this.parentNode.remove();calc()">✕</button></div>`}
+function NB(){if(!DB.products.some(p=>p.stock>0))return toast(t('stock')+': 0');modal(`<h3>${t('newbill')}</h3><label>${t('date')}<input id="b_dt" type="date" value="${td()}"></label><label>${t('cust')}<select id="b_c"><option value="">${t('walkin')}</option>${DB.customers.map(c=>`<option value="${c.id}">${esc(c.name)}</option>`).join('')}</select></label><input id="b_n" placeholder="${t('name')}"><input id="b_m" placeholder="${t('mobile')}"><div id="li">${lineRow()}</div><button class="b2" onclick="$('#li').insertAdjacentHTML('beforeend',lineRow());calc()">+ ${t('add')}</button><label>${t('disc')} ₹<input id="b_disc" type="number" min="0" value="0" oninput="calc()"></label><label>${t('type')}<select id="b_gst" onchange="calc()"><option value="0">${t('nogst')}</option><option value="1">${t('gst')} (${DB.set.gst}%)</option></select></label><label>${t('status')}<select id="b_st"><option value="paid">${t('paid')}</option><option value="unpaid">${t('unpaid')}</option><option value="partial">${t('partial')}</option></select></label><input id="b_pd" type="number" min="0" placeholder="${t('partial')} ${t('paid')} ₹"><h3>${t('total')}: <span id="b_tot"></span></h3><div class="bt"><button class="b2" onclick="cl()">${t('cancel')}</button><button class="b1" onclick="SB()">${t('save')}</button></div>`);calc()}
+function calc(){let s=0;document.querySelectorAll('.lr').forEach(r=>{const p=DB.products.find(x=>x.id==r.querySelector('.lp').value);s+=p?p.price*(+r.querySelector('.lq').value||0):0});const d=+$('#b_disc').value||0,g=$('#b_gst').value=='1'?R((s-d)*DB.set.gst/100):0,tot=R(Math.max(0,s-d+g));$('#b_tot').textContent=M(tot);return{sub:s,d,g,tot}}
+function SB(){const it=[];for(const r of document.querySelectorAll('.lr')){const p=DB.products.find(x=>x.id==r.
